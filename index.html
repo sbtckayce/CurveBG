@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+<title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <ul class="menu-decrip">
+            <li class="menu-item active"><ion-icon name="home-outline"></ion-icon>
+            <span>Dashboard</span>
+            </li>
+            <li class="menu-item">
+                <ion-icon name="bar-chart-outline"></ion-icon>
+                <span>Report</span>
+            </li>
+            <li class="menu-item">
+                <ion-icon name="people-outline"></ion-icon>
+                <span>Customer</span>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    $(function(){
+        $('.menu-decrip li').click(function(){
+            $('.menu-decrip li').each(function(){
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+        })
+    })
+</script>
+</html>
